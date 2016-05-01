@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:profile="http:///schemas/profile/_YtR7YA1hEeaKhOfMRJ0Xkw/4" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/profile/_YtR7YA1hEeaKhOfMRJ0Xkw/4 hotel.profile.uml#_YtfWwA1hEeaKhOfMRJ0Xkw">
+  <uml:Model xmi:id="_9_1SlBd2EeK-qJghcLIA1Q" name="Model">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_9_1SlRd2EeK-qJghcLIA1Q">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_GOUWsBd3EeK-qJghcLIA1Q" name="Client">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Mbm_YBd3EeK-qJghcLIA1Q" name="reservation" type="_HnvAsBd3EeK-qJghcLIA1Q" association="_Mbm_Yxd3EeK-qJghcLIA1Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Mbm_YRd3EeK-qJghcLIA1Q"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Mbm_Yhd3EeK-qJghcLIA1Q" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ZJj4sBd3EeK-qJghcLIA1Q" name="clientNo" visibility="protected" type="_xao28Bd3EeK-qJghcLIA1Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8HhQYBd3EeK-qJghcLIA1Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8HhQYRd3EeK-qJghcLIA1Q" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_8HrBYBd3EeK-qJghcLIA1Q">
+          <value xsi:nil="true"/>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Epq3oBd4EeK-qJghcLIA1Q" name="firstName" visibility="protected" type="_u52VMBd3EeK-qJghcLIA1Q" isUnique="false">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Hy2PEBd4EeK-qJghcLIA1Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Hy2PERd4EeK-qJghcLIA1Q" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Hy2PEhd4EeK-qJghcLIA1Q">
+          <value xsi:nil="true"/>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_JNck0Bd4EeK-qJghcLIA1Q" name="lastName" visibility="protected" type="_u52VMBd3EeK-qJghcLIA1Q" isUnique="false">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MAHgwBd4EeK-qJghcLIA1Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MAHgwRd4EeK-qJghcLIA1Q" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_MAHgwhd4EeK-qJghcLIA1Q">
+          <value xsi:nil="true"/>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Mp1zMBd4EeK-qJghcLIA1Q" name="phoneNo" visibility="protected" type="_u52VMBd3EeK-qJghcLIA1Q" isUnique="false">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RDLyABd4EeK-qJghcLIA1Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RDLyARd4EeK-qJghcLIA1Q" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_RDLyAhd4EeK-qJghcLIA1Q">
+          <value xsi:nil="true"/>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_tDn90BkAEeKZ_J6izD0QGQ" name="findByFirstNameLastName" isStatic="true">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_U7hf8BkBEeKZ_J6izD0QGQ" name="firstName" type="_u52VMBd3EeK-qJghcLIA1Q" isUnique="false"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_ysZuwBkBEeKZ_J6izD0QGQ" name="lastName" type="_u52VMBd3EeK-qJghcLIA1Q" isUnique="false"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_SFyOoBkREeKZ_J6izD0QGQ" name="result" type="_GOUWsBd3EeK-qJghcLIA1Q" isUnique="false" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_HnvAsBd3EeK-qJghcLIA1Q" name="Reservation">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_SGPxgBd4EeK-qJghcLIA1Q" name="arrival" visibility="protected" type="_rZ4OYBd3EeK-qJghcLIA1Q" isUnique="false">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UK37sBd4EeK-qJghcLIA1Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UK37sRd4EeK-qJghcLIA1Q" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_ULBFoBd4EeK-qJghcLIA1Q">
+          <value xsi:nil="true"/>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_UhXwIBd4EeK-qJghcLIA1Q" name="departure" visibility="protected" type="_rZ4OYBd3EeK-qJghcLIA1Q" isUnique="false">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WqxFkBd4EeK-qJghcLIA1Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WqxFkRd4EeK-qJghcLIA1Q" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_WqxFkhd4EeK-qJghcLIA1Q">
+          <value xsi:nil="true"/>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Mbm_ZBd3EeK-qJghcLIA1Q" name="client" type="_GOUWsBd3EeK-qJghcLIA1Q" association="_Mbm_Yxd3EeK-qJghcLIA1Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Mbm_ZRd3EeK-qJghcLIA1Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Mbm_Zhd3EeK-qJghcLIA1Q" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_NI6KRBd3EeK-qJghcLIA1Q" name="room" type="_KOfAgBd3EeK-qJghcLIA1Q" association="_NI6KQxd3EeK-qJghcLIA1Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NI6KRRd3EeK-qJghcLIA1Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NI6KRhd3EeK-qJghcLIA1Q" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_qTdb8BkDEeKZ_J6izD0QGQ" name="reservationNo" visibility="protected" type="_xao28Bd3EeK-qJghcLIA1Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s0i4oBkDEeKZ_J6izD0QGQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s0i4oRkDEeKZ_J6izD0QGQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_s0i4ohkDEeKZ_J6izD0QGQ">
+          <value xsi:nil="true"/>
+        </defaultValue>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_KOfAgBd3EeK-qJghcLIA1Q" name="Room">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_NI6KQBd3EeK-qJghcLIA1Q" name="reservation" type="_HnvAsBd3EeK-qJghcLIA1Q" association="_NI6KQxd3EeK-qJghcLIA1Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NI6KQRd3EeK-qJghcLIA1Q"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NI6KQhd3EeK-qJghcLIA1Q" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_eHBbwBd4EeK-qJghcLIA1Q" name="size" visibility="protected" type="_u52VMBd3EeK-qJghcLIA1Q" isUnique="false">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fzXBwBd4EeK-qJghcLIA1Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fzXBwRd4EeK-qJghcLIA1Q" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_fzgLsBd4EeK-qJghcLIA1Q">
+          <value xsi:nil="true"/>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_gGR9wBd4EeK-qJghcLIA1Q" name="price" visibility="protected" type="_xao28Bd3EeK-qJghcLIA1Q" isUnique="false">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hkKRABd4EeK-qJghcLIA1Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hkKRARd4EeK-qJghcLIA1Q" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_hkKRAhd4EeK-qJghcLIA1Q">
+          <value xsi:nil="true"/>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_jfBloBkBEeKZ_J6izD0QGQ" name="roomNo" visibility="protected" type="_xao28Bd3EeK-qJghcLIA1Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mkeToBkBEeKZ_J6izD0QGQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mkeToRkBEeKZ_J6izD0QGQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_mkeTohkBEeKZ_J6izD0QGQ">
+          <value xsi:nil="true"/>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_xjXNoBkCEeKZ_J6izD0QGQ" name="findRoom" isStatic="true">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_JK-YIBkDEeKZ_J6izD0QGQ" name="arrival" type="_rZ4OYBd3EeK-qJghcLIA1Q" isUnique="false"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_PiYmIBkDEeKZ_J6izD0QGQ" name="departure" type="_rZ4OYBd3EeK-qJghcLIA1Q" isUnique="false"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_mTO_YBkREeKZ_J6izD0QGQ" name="result" type="_xao28Bd3EeK-qJghcLIA1Q" isUnique="false" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Mbm_Yxd3EeK-qJghcLIA1Q" name="client_reservation_1" visibility="protected" memberEnd="_Mbm_ZBd3EeK-qJghcLIA1Q _Mbm_YBd3EeK-qJghcLIA1Q"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NI6KQxd3EeK-qJghcLIA1Q" name="room_reservation_1" visibility="protected" memberEnd="_NI6KRBd3EeK-qJghcLIA1Q _NI6KQBd3EeK-qJghcLIA1Q"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_rZ4OYBd3EeK-qJghcLIA1Q" name="Date"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_tnmDIBd3EeK-qJghcLIA1Q" name="Button"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_u52VMBd3EeK-qJghcLIA1Q" name="String"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_xao28Bd3EeK-qJghcLIA1Q" name="int"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_j57OgBd4EeK-qJghcLIA1Q" name="RoomManagement">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_vcTFgBd4EeK-qJghcLIA1Q" name="findRoom"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_xMge4Bd4EeK-qJghcLIA1Q" name="reserveRoom"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_sv5JoBd4EeK-qJghcLIA1Q" name="Dependency1" client="_j57OgBd4EeK-qJghcLIA1Q" supplier="_GOUWsBd3EeK-qJghcLIA1Q"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_tPB8sBd4EeK-qJghcLIA1Q" name="Dependency2" client="_j57OgBd4EeK-qJghcLIA1Q" supplier="_HnvAsBd3EeK-qJghcLIA1Q"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_trWFQBd4EeK-qJghcLIA1Q" name="Dependency3" client="_j57OgBd4EeK-qJghcLIA1Q" supplier="_KOfAgBd3EeK-qJghcLIA1Q"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_z7dYcBd4EeK-qJghcLIA1Q" name="ReservationRequest">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_9rr8YBd4EeK-qJghcLIA1Q" name="from" visibility="protected" type="_rZ4OYBd3EeK-qJghcLIA1Q" isUnique="false">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__xzUUBd4EeK-qJghcLIA1Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__xzUURd4EeK-qJghcLIA1Q" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="__xzUUhd4EeK-qJghcLIA1Q">
+          <value xsi:nil="true"/>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ATUtABd5EeK-qJghcLIA1Q" name="to" visibility="protected" type="_rZ4OYBd3EeK-qJghcLIA1Q" isUnique="false">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Bp6FcBd5EeK-qJghcLIA1Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Bp6FcRd5EeK-qJghcLIA1Q" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Bp6Fchd5EeK-qJghcLIA1Q">
+          <value xsi:nil="true"/>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_CUFD0Bd5EeK-qJghcLIA1Q" name="proceed" visibility="protected" type="_tnmDIBd3EeK-qJghcLIA1Q" isUnique="false">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Efjc4Bd5EeK-qJghcLIA1Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Efjc4Rd5EeK-qJghcLIA1Q" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_EftN4Bd5EeK-qJghcLIA1Q">
+          <value xsi:nil="true"/>
+        </defaultValue>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_4p9H4Bd4EeK-qJghcLIA1Q" name="Bookroom">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_F8GTYBd5EeK-qJghcLIA1Q" name="firstName" visibility="protected" type="_u52VMBd3EeK-qJghcLIA1Q" isUnique="false">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IRQz8Bd5EeK-qJghcLIA1Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IRQz8Rd5EeK-qJghcLIA1Q" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_IRQz8hd5EeK-qJghcLIA1Q">
+          <value xsi:nil="true"/>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_IuUjYBd5EeK-qJghcLIA1Q" name="lastname" visibility="protected" type="_u52VMBd3EeK-qJghcLIA1Q" isUnique="false">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LMICkBd5EeK-qJghcLIA1Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LMICkRd5EeK-qJghcLIA1Q" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_LMRzkBd5EeK-qJghcLIA1Q">
+          <value xsi:nil="true"/>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_MG1-YBd5EeK-qJghcLIA1Q" name="phoneNo" visibility="protected" type="_u52VMBd3EeK-qJghcLIA1Q" isUnique="false">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O1MbABd5EeK-qJghcLIA1Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O1MbARd5EeK-qJghcLIA1Q" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_O1Vk8Bd5EeK-qJghcLIA1Q">
+          <value xsi:nil="true"/>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_PTcdQBd5EeK-qJghcLIA1Q" name="reserveRoom" visibility="protected" type="_tnmDIBd3EeK-qJghcLIA1Q" isUnique="false">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_R2BHsBd5EeK-qJghcLIA1Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_R2BHsRd5EeK-qJghcLIA1Q" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_R2BHshd5EeK-qJghcLIA1Q">
+          <value xsi:nil="true"/>
+        </defaultValue>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_60P1MBd4EeK-qJghcLIA1Q" name="Dependency4" client="_4p9H4Bd4EeK-qJghcLIA1Q" supplier="_j57OgBd4EeK-qJghcLIA1Q"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_7UbxIBd4EeK-qJghcLIA1Q" name="Dependency5" client="_z7dYcBd4EeK-qJghcLIA1Q" supplier="_j57OgBd4EeK-qJghcLIA1Q"/>
+    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_rdZm4BkAEeKZ_J6izD0QGQ" name="InstanceSpecification1"/>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_V1uegBd5EeK-qJghcLIA1Q">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bcyOkA1hEeaKhOfMRJ0Xkw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_bcyOkQ1hEeaKhOfMRJ0Xkw" key="Version" value="0.0.5"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_bcyOkg1hEeaKhOfMRJ0Xkw" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_bcyOkw1hEeaKhOfMRJ0Xkw" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_bcyOlA1hEeaKhOfMRJ0Xkw" key="Date" value="2016-04-28"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_bcyOlQ1hEeaKhOfMRJ0Xkw" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_V1uegRd5EeK-qJghcLIA1Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="hotel.profile.uml#_YtfWwA1hEeaKhOfMRJ0Xkw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="hotel.profile.uml#_ltL4EBLnEeKQ2IYFEdXUmw"/>
+    </profileApplication>
+  </uml:Model>
+  <profile:En xmi:id="_ZHi0kBd5EeK-qJghcLIA1Q" base_Class="_GOUWsBd3EeK-qJghcLIA1Q"/>
+  <profile:En xmi:id="_cLpewBd5EeK-qJghcLIA1Q" base_Class="_KOfAgBd3EeK-qJghcLIA1Q"/>
+  <profile:BL xmi:id="_drUhwBd5EeK-qJghcLIA1Q" base_Class="_j57OgBd4EeK-qJghcLIA1Q"/>
+  <profile:UI xmi:id="_e8-98Bd5EeK-qJghcLIA1Q" base_Class="_z7dYcBd4EeK-qJghcLIA1Q"/>
+  <profile:UI xmi:id="_fzOCYBd5EeK-qJghcLIA1Q" base_Class="_4p9H4Bd4EeK-qJghcLIA1Q"/>
+  <profile:En xmi:id="_jql8kBd5EeK-qJghcLIA1Q" base_Class="_HnvAsBd3EeK-qJghcLIA1Q"/>
+  <profile:pk xmi:id="_l1UuwBd5EeK-qJghcLIA1Q" base_Property="_ZJj4sBd3EeK-qJghcLIA1Q"/>
+  <profile:pk xmi:id="_oHsH8BkDEeKZ_J6izD0QGQ" base_Property="_jfBloBkBEeKZ_J6izD0QGQ"/>
+  <profile:pk xmi:id="_vz4XkBkDEeKZ_J6izD0QGQ" base_Property="_qTdb8BkDEeKZ_J6izD0QGQ"/>
+</xmi:XMI>

@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: UmlToApp
+Bundle-SymbolicName: HotelKD2java_DDL
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.eclipse.xtend.lib,
+ com.google.guava,
+ org.eclipse.xtext.xbase.lib,
+ org.eclipse.xtext,
+ org.eclipse.emf.mwe2.launch,
+ org.apache.log4j,
+ org.apache.commons.logging,
+ org.eclipse.uml2.uml
+Import-Package: org.apache.commons.io,
+ org.slf4j
+

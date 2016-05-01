@@ -1,0 +1,53 @@
+module umlToApp.workflow.UmlToAppGenerator
+
+import org.eclipse.emf.mwe.utils.*
+
+// targetDir must be different from src-gen when using protected regions
+var targetDir = "src-gen2"
+//var targetDir = "../HotelJavaDAOgeneratedDataLayer/src/data"
+var modelPath = "model/hotel"
+//var modelPath = "model"
+
+Workflow {
+	bean = StandaloneSetup {
+		registerGeneratedEPackage = "org.eclipse.uml2.uml.UMLPackage"
+		extensionMap = {
+			from = "uml"
+			to = "org.eclipse.uml2.uml.internal.resource.UMLResourceFactoryImpl"
+		}
+		uriMap = {
+			from = "pathmap://UML_LIBRARIES/"
+			to = "jar:file:res/org.eclipse.uml2.uml.resources_5.1.0.v20160201-0816.jar!/libraries/"
+		}
+		uriMap = {
+			from = "pathmap://UML_METAMODELS/"
+			to = "jar:file:res/org.eclipse.uml2.uml.resources_5.1.0.v20160201-0816.jar!/metamodels/"
+		}
+		uriMap = {
+			from = "pathmap://UML_PROFILES/"
+			to = "jar:file:res/org.eclipse.uml2.uml.resources_5.1.0.v20160201-0816.jar!/profiles/"
+		}
+	}
+	
+	component = DirectoryCleaner {
+		directory = targetDir
+	}
+	
+	component = UmlToAppGeneratorSupport {}
+	
+	component = org.eclipse.xtext.mwe.Reader {
+		path = modelPath
+		register = UmlToAppGeneratorSetup {}
+		loadResource = {
+			slot = "model"
+		}
+	}
+	
+	component = org.eclipse.xtext.generator.GeneratorComponent {
+		register = UmlToAppGeneratorSetup {}
+		slot = "model"
+		outlet = {
+			path = targetDir
+		}
+	}
+}
